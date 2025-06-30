@@ -302,6 +302,10 @@
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    width: 95%;
+  }
+  .Hero .Hero_left {
+    width: 95%;
   }
   .Hero .Hero_left h1 {
     font-size: 2rem;
@@ -320,8 +324,8 @@
     margin-bottom: 2rem;
   }
   .Hero .Hero_left p {
-    font-size: 1.5rem;
-    width: 390px;
+    font-size: 1.1rem;
+    width: 100%;
     color: #333;
     margin-bottom: 3rem;
   }
@@ -340,6 +344,7 @@
     margin-left: 1rem;
     display: flex;
     gap: 2rem;
+    align-items: center;
   }
   .Hero .container {
     max-width: 1400px;
@@ -359,10 +364,10 @@
   }
   .Hero .hero_right .bg-shape {
     position: absolute;
-    top: 70%;
-    right: -20px;
+    top: 80%;
+    right: -26px;
     transform: translateY(-50%);
-    width: 420px;
+    width: 320px;
     height: 350px;
     background-color: #d5d5d5;
     border-top-left-radius: 245px;

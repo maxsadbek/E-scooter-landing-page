@@ -194,8 +194,9 @@
         align-items: center;
         margin-top: $rem3;
         margin-bottom: $rem3;
-
+        width: 95%;
         .Hero_left {
+            width: 95%;
             h1 {
                 font-size: $rem2;
                 color: $gray;
@@ -216,8 +217,8 @@
             }
 
             p {
-                font-size: $rem15;
-                width: 390px;
+                font-size: 1.1rem;
+                width: 100%;
                 color: #333;
                 margin-bottom: $rem3;
             }
@@ -238,6 +239,7 @@
                     margin-left: $rem1;
                     display: flex;
                     gap: $rem2;
+                align-items: center;
                 }
             }
         }
@@ -262,10 +264,10 @@
 
             .bg-shape {
                 position: absolute;
-                top: 70%;
-                right: -20px; // containerdan tashqariga chiqadi
+                top: 80%;
+                right: -26px; // containerdan tashqariga chiqadi
                 transform: translateY(-50%);
-                width: 420px;
+                width: 320px;
                 height: 350px;
                 background-color: #d5d5d5;
                 border-top-left-radius: 245px;
