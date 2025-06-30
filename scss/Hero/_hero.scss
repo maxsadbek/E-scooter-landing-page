@@ -84,3 +84,194 @@
         }
     }
 }
+
+@media screen and (max-width:361px) {
+
+    .Hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: $rem3;
+        margin-bottom: $rem3;
+        width: 95%;
+
+        .Hero_left {
+            width: 90%;
+
+            h1 {
+                font-size: $rem1;
+                color: $gray;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: $rem4;
+            }
+
+            span {
+                color: $gray;
+                font-weight: 800;
+            }
+
+            .dicider {
+                width: 70%;
+                margin-bottom: $rem2;
+            }
+
+            p {
+                font-size: $rem1;
+                width: 100%;
+                color: #333;
+                margin-bottom: $rem3;
+            }
+
+            .Hero_flex {
+                display: flex;
+                align-items: center;
+                gap: $rem1;
+
+                button {
+                    padding: $rem09;
+                    font-size: $rem1;
+                    background-color: #333;
+                    color: $white;
+                }
+
+                .watch {
+                    margin-left: $rem1;
+                    display: flex;
+                    gap: $rem2;
+                    align-items: center;
+
+                    h4 {
+                        font-size: 0.6rem;
+                    }
+                }
+                                    br{
+                        display: none;
+                    }
+            }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero_right {
+            position: relative;
+            display: inline-block;
+            margin-bottom: $rem9;
+
+            img {
+                position: relative;
+                z-index: 2;
+                max-width: 100%;
+            }
+
+            .bg-shape {
+                position: absolute;
+                top: 80%;
+                right: -27px; // containerdan tashqariga chiqadi
+                transform: translateY(-50%);
+                width: 350px;
+                height: 280px;
+                background-color: #d5d5d5;
+                border-top-left-radius: 245px;
+                border-bottom-left-radius: 245px;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media (min-width:370px) and (max-width:769px) {
+
+    .Hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: $rem3;
+        margin-bottom: $rem3;
+
+        .Hero_left {
+            h1 {
+                font-size: $rem2;
+                color: $gray;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: $rem4;
+            }
+
+            span {
+                color: $gray;
+                font-weight: 800;
+            }
+
+            .dicider {
+                width: 320px;
+                margin-bottom: $rem2;
+            }
+
+            p {
+                font-size: $rem15;
+                width: 390px;
+                color: #333;
+                margin-bottom: $rem3;
+            }
+
+            .Hero_flex {
+                display: flex;
+                align-items: center;
+                gap: $rem1;
+
+                button {
+                    padding: $rem09;
+                    font-size: $rem1;
+                    background-color: #333;
+                    color: $white;
+                }
+
+                .watch {
+                    margin-left: $rem1;
+                    display: flex;
+                    gap: $rem2;
+                }
+            }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero_right {
+            position: relative;
+            display: inline-block;
+            margin-bottom: $rem9;
+
+            img {
+                position: relative;
+                z-index: 2;
+                max-width: 100%;
+            }
+
+            .bg-shape {
+                position: absolute;
+                top: 70%;
+                right: -20px; // containerdan tashqariga chiqadi
+                transform: translateY(-50%);
+                width: 420px;
+                height: 350px;
+                background-color: #d5d5d5;
+                border-top-left-radius: 245px;
+                border-bottom-left-radius: 245px;
+                z-index: 1;
+            }
+        }
+    }
+}
