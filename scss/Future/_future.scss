@@ -1,5 +1,42 @@
-// header{
-//     .navbar{
-//         padding: ;
-//     }
-// }
+@use'../variables' as*;
+
+header {
+    .navbar {
+        padding: $rem15 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: $rem3;
+            list-style: none;
+            color: #555;
+            font-weight: $wight5;
+        }
+
+        .navbar_button {
+            .button1 {
+                padding: $rem1 $rem15;
+                border-radius: 6px;
+                border: none;
+                background-color: transparent;
+            }
+
+            .button2 {
+                padding: $rem1 $rem15;
+                border-radius: 6px;
+                border: none;
+                background-color: $gray;
+                color: $white;
+                box-shadow: 0px 0px 7px $gray;
+            }
+
+        }
+    }
+
+    hr {
+        color: #919191;
+    }
+}
