@@ -1,0 +1,105 @@
+.imgs {
+    margin-left: -10rem;
+}
+
+.golf2 {
+    margin-left: -12rem;
+}
+
+.multiple_box2 {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .multiple_flex_text {
+        h1 {
+            font-size: 40px;
+        }
+
+        .multiple_flex {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+    }
+
+    .multiple_flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+}
+.btn{
+    text-align: center;
+    margin-top: 5rem;
+    button{
+    padding: 2rem 4rem;
+        font-size: 22px;
+        font-weight: 800;
+        color: #666;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        &:hover{
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 0px;
+            box-shadow: 0px 0px 5px #555;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .imgs {
+        margin-left: -7rem;
+        width: 60%;
+    }
+
+    .golf2 {
+        margin-left: -2rem;
+        width: 100%;
+    }
+
+    .multiple_box2 {
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .multiple_flex_text2 {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 2rem;
+            }
+
+            .multiple_flex_text {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 1rem;
+                margin-left: -2rem;
+            }
+        }
+
+        .multiple_flex {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 1rem;
+            margin-left: -2rem;
+        }
+
+        .golf {
+            margin-right: 0rem;
+            margin-top: 2rem;
+        }
+
+        .img,
+        .golf {
+            width: 100%;
+        }
+    }
+}
