@@ -504,6 +504,59 @@
   margin-top: 4rem;
 }
 
+@media screen and (max-width: 600px) {
+  .Testiminals {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 6rem;
+  }
+  .Testiminals h1 {
+    font-size: 40px;
+    color: #444;
+  }
+  .Testiminals .Testiminals_box {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 3rem 2rem;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+  }
+  .Testiminals .Testiminals_box p {
+    font-size: 22px;
+    margin-bottom: 2rem;
+    color: #444;
+    margin-top: 1rem;
+  }
+  .Testiminals .Testiminals_box .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: start;
+  }
+  .Testiminals .Testiminals_box .flex h5 {
+    font-size: 16px;
+    margin-bottom: 1px;
+    font-weight: 500;
+  }
+  .Testiminals .Testiminals_box .flex h6 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .Testiminals .Testiminals_box:hover {
+    background-color: #fff;
+    box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.32);
+    transform: translateY(-4px);
+    border: none;
+  }
+  .Testiminals .flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 3rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
