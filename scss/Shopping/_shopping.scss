@@ -32,18 +32,21 @@
         margin-top: 1rem;
     }
 }
-.btn{
+
+.btn {
     text-align: center;
     margin-top: 5rem;
-    button{
-    padding: 2rem 4rem;
+
+    button {
+        padding: 2rem 4rem;
         font-size: 22px;
         font-weight: 800;
         color: #666;
         background-color: transparent;
         border-radius: 10px;
         transition: all 0.5s ease;
-        &:hover{
+
+        &:hover {
             border-top-right-radius: 50px;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 0px;
@@ -52,6 +55,7 @@
         }
     }
 }
+
 @media screen and (max-width:600px) {
     .imgs {
         margin-left: -7rem;
@@ -100,6 +104,29 @@
         .img,
         .golf {
             width: 100%;
+        }
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 5rem;
+
+        button {
+            padding: 1rem 1rem;
+            font-size: 16px;
+            font-weight: 800;
+            color: #666;
+            background-color: transparent;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                box-shadow: 0px 0px 5px #555;
+            }
         }
     }
 }

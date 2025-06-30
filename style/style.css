@@ -955,7 +955,7 @@ html ::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     box-shadow: 1px -2px 8px 0px rgba(34, 60, 80, 0.08);
     border-radius: 50%;
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
   }
   .card .card_box:hover {
     box-shadow: 1px -2px 8px 9px rgba(34, 60, 80, 0.12);
@@ -1114,6 +1114,57 @@ html ::-webkit-scrollbar-thumb:hover {
   .multiple_box2 .golf {
     width: 100%;
   }
+  .btn {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .btn button {
+    padding: 1rem 1rem;
+    font-size: 16px;
+    font-weight: 800;
+    color: #666;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  .btn button:hover {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow: 0px 0px 5px #555;
+  }
+}
+.newsletter {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.newsletter h1 {
+  font-size: 40px;
+  color: #444;
+  margin-bottom: 0.6rem;
+}
+.newsletter p {
+  font-size: 20px;
+}
+.newsletter .form {
+  margin-top: 2rem;
+}
+.newsletter .form input {
+  padding: 1.5rem 1rem;
+  width: 400px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  outline: none;
+}
+.newsletter .form button {
+  padding: 1.3rem 2rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  background-color: #45464e;
+  color: #fff;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
