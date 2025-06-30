@@ -21,8 +21,9 @@
             <div class="logo">
                 <img src="./img/svg/logo (1).svg" alt="">
             </div>
-            <div class="navbar_menu">
-                <ul class="navbar_menu">
+            <div class="navbar_menu" id="navbar-menu">
+                <span class="close" id="close-menu">&times;</span>
+                <ul>
                     <li>PRODUCTS <span><i class="ri-arrow-down-s-line"></i></span></li>
                     <li>GALLERY</li>
                     <li>CONTACT</li>
@@ -32,9 +33,27 @@
                 <button class="button1">LOG IN</button>
                 <button class="button2">SIGN UP</button>
             </div>
+
+            <!-- Menu icon -->
+            <i class="ri-menu-line" id="menu-icon"></i>
         </nav>
         <hr>
     </header>
+    <!-- script -->
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const navbarMenu = document.getElementById("navbar-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        menuIcon.addEventListener("click", () => {
+            navbarMenu.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            navbarMenu.classList.remove("active");
+        });
+    </script>
+
 </body>
 
 </html>

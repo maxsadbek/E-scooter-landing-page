@@ -1,42 +1,161 @@
 @use'../variables' as*;
+// Breakpoint
+$mobile: 768px;
 
-header {
-    .navbar {
-        padding: $rem15 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+// Umumiy stillar
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 
+
+    .navbar_menu {
         ul {
-            display: flex;
-            align-items: center;
-            gap: $rem3;
             list-style: none;
-            color: #555;
-            font-weight: $wight5;
-        }
+            display: flex;
+            gap: 30px;
 
-        .navbar_button {
-            .button1 {
-                padding: $rem1 $rem15;
-                border-radius: 6px;
-                border: none;
-                background-color: transparent;
+            li {
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+
+                span {
+                    margin-left: 4px;
+                }
             }
-
-            .button2 {
-                padding: $rem1 $rem15;
-                border-radius: 6px;
-                border: none;
-                background-color: $gray;
-                color: $white;
-                box-shadow: 0px 0px 7px $gray;
-            }
-
         }
     }
 
-    hr {
-        color: #919191;
+    .navbar_button {
+        display: flex;
+        gap: 10px;
+
+        .button1,
+        .button2 {
+            padding: $rem08 $rem15;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .button1 {
+            background-color: transparent;
+            font-weight: $wight4;
+        }
+
+        .button2 {
+            background-color: black;
+            color: white;
+            box-shadow: 0px 0px 7px $gray;
+        }
+    }
+
+    #menu-icon {
+        display: none;
+        font-size: 26px;
+        cursor: pointer;
+    }
+}
+
+// Mobil menyu uchun
+@media (max-width: $mobile) {
+    .navbar {
+        .navbar_menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            padding: 40px 20px;
+            z-index: 999;
+
+            &.active {
+                right: 0;
+            }
+
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 26px;
+                cursor: pointer;
+            }
+
+            ul {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    font-size: 18px;
+                }
+
+                .mobile-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-top: 20px;
+
+                    .button1,
+                    .button2 {
+                        padding: 10px;
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .button2 {
+                        background: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .navbar_button {
+            display: none;
+        }
+
+        #menu-icon {
+            display: block;
+        }
+    }
+}
+
+// Desktopda
+@media (min-width: 600px) {
+    .navbar {
+        .navbar_menu {
+            position: static;
+            display: block !important;
+            height: auto;
+            background: none;
+            box-shadow: none;
+            padding: 0;
+
+            .close {
+                display: none;
+            }
+
+            ul {
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+
+        #menu-icon {
+            display: none;
+        }
+
+        .navbar_button {
+            display: flex;
+        }
     }
 }
