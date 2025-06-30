@@ -1,0 +1,31 @@
+@use'../variables' as*;
+footer{
+    background-color: $gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    .footer_box{
+        display: flex;
+        justify-content: space-around;
+        line-height: 3;
+        color: $white;
+    }
+}
+@media screen and (max-width:600px) {
+
+footer{
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    .footer_box{
+        display: flex;
+        line-height: 3;
+        color: $white;
+        font-size: 14px;
+    }
+    img{
+        width: 100%;
+    }
+}
+}
