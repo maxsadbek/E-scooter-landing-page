@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "name": "e-scooter-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass scss/style.scss:style/style.css",
+    "scss":"sass --watch scss/style.scss:style/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsadbek/E-scooter-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxsadbek/E-scooter-landing-page/issues"
+  },
+  "homepage": "https://github.com/maxsadbek/E-scooter-landing-page#readme"
 }
