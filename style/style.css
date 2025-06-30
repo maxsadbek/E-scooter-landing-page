@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .navbar .navbar_menu {
     position: fixed;
     top: 0;
@@ -101,7 +101,7 @@
     display: block;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 769px) {
   .navbar .navbar_menu {
     position: static;
     display: block !important;
@@ -132,9 +132,81 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+}
+
+.Hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.Hero .Hero_left h1 {
+  font-size: 5rem;
+  color: #45464e;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+}
+.Hero .Hero_left span {
+  color: #45464e;
+  font-weight: 800;
+}
+.Hero .Hero_left .dicider {
+  width: 320px;
+  margin-bottom: 4rem;
+}
+.Hero .Hero_left p {
+  font-size: 1.5rem;
+  width: 390px;
+  color: #333;
+  margin-bottom: 3rem;
+}
+.Hero .Hero_left .Hero_flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Hero .Hero_left .Hero_flex button {
+  padding: 0.9rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+.Hero .Hero_left .Hero_flex .watch {
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.Hero .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.Hero .hero_right {
+  position: relative;
+  display: inline-block;
+}
+.Hero .hero_right img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+.Hero .hero_right .bg-shape {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+  transform: translateY(-50%);
+  width: 520px;
+  height: 550px;
+  background-color: #d5d5d5;
+  border-top-left-radius: 245px;
+  border-bottom-left-radius: 245px;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

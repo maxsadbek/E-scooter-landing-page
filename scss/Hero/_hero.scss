@@ -1,0 +1,86 @@
+@use'../variables' as*;
+
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $rem3;
+
+    .Hero_left {
+        h1 {
+            font-size: $rem5;
+            color: $gray;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: $rem4;
+        }
+
+        span {
+            color: $gray;
+            font-weight: 800;
+        }
+
+        .dicider {
+            width: 320px;
+            margin-bottom: $rem4;
+        }
+
+        p {
+            font-size: $rem15;
+            width: 390px;
+            color: #333;
+            margin-bottom: $rem3;
+        }
+
+        .Hero_flex {
+            display: flex;
+            align-items: center;
+            gap: $rem1;
+
+            button {
+                padding: $rem09;
+                font-size: $rem1;
+                background-color: #333;
+                color: $white;
+            }
+
+            .watch {
+                margin-left: $rem1;
+                display: flex;
+                gap: $rem2;
+            }
+        }
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .hero_right {
+        position: relative;
+        display: inline-block;
+
+        img {
+            position: relative;
+            z-index: 2;
+            max-width: 100%;
+        }
+
+        .bg-shape {
+            position: absolute;
+            top: 50%;
+            right: -80px; // containerdan tashqariga chiqadi
+            transform: translateY(-50%);
+            width: 520px;
+            height: 550px;
+            background-color: #d5d5d5;
+            border-top-left-radius: 245px;
+            border-bottom-left-radius: 245px;
+            z-index: 1;
+        }
+    }
+}

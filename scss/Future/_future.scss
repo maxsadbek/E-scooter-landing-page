@@ -1,6 +1,6 @@
 @use'../variables' as*;
 // Breakpoint
-$mobile: 768px;
+$mobile: 769px;
 
 // Umumiy stillar
 .navbar {
@@ -130,7 +130,7 @@ $mobile: 768px;
 }
 
 // Desktopda
-@media (min-width: 600px) {
+@media (min-width: $mobile) {
     .navbar {
         .navbar_menu {
             position: static;
