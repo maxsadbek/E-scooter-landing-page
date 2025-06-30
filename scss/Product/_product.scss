@@ -1,0 +1,26 @@
+.Product {
+    margin-top: 5rem;
+    .product_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .product_text {
+        text-align: center;
+        margin-top: 8rem;
+        h1{
+            font-size: 50px;
+            color: #555;
+            letter-spacing: 2px;
+        }
+    }
+
+    .product_right_text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 3rem;
+    }
+}
