@@ -141,13 +141,107 @@
   color: #555;
   letter-spacing: 2px;
 }
+.Product .product_text p {
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 .Product .product_right_text {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 3rem;
 }
+.Product .product_right_text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+}
 
+@media (min-width: 361px) and (max-width: 600px) {
+  .Product {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  .Product .product_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Product .product_box .img {
+    width: 100%;
+  }
+  .Product .product_text {
+    text-align: center;
+    margin-top: 8rem;
+  }
+  .Product .product_text h1 {
+    font-size: 30px;
+    color: #555;
+    letter-spacing: 2px;
+  }
+  .Product .product_text p {
+    font-size: 17px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .Product .product_right_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 3rem;
+  }
+  .Product .product_right_text h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+  }
+}
+@media (max-width: 360px) {
+  .Product {
+    margin-top: 5rem;
+    width: 90%;
+  }
+  .Product .product_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .Product .product_box img {
+    margin-left: 2rem;
+  }
+  .Product .product_box .img {
+    width: 100%;
+  }
+  .Product .product_text {
+    text-align: center;
+    margin-top: 8rem;
+    width: 90%;
+    margin-left: 1rem;
+  }
+  .Product .product_text h1 {
+    font-size: 24px;
+    color: #555;
+    letter-spacing: 2px;
+  }
+  .Product .product_text p {
+    font-size: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .Product .product_right_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+  .Product .product_right_text h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -466,6 +560,7 @@
     gap: 2rem;
     text-align: center;
     align-items: center;
+    width: 90%;
   }
   .card .card_box {
     width: 90%;
@@ -508,9 +603,10 @@
     gap: 2rem;
     text-align: center;
     align-items: center;
+    width: 90%;
   }
   .card .card_box {
-    width: 90%;
+    width: 100%;
     height: 320px;
     padding: 1rem 2rem;
     text-align: center;
